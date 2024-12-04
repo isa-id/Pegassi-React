@@ -20,11 +20,9 @@ export function Navbar() {
                     <nav className="Nav">
                         <ul>
                             <li><Link to="/">Inicio</Link></li>
-                            <li><Link to="/catalog">Catalogo</Link></li>
+                            <li><Link to="/catalog">Catálogo</Link></li>
                             <li><Link to="/contact">Contacto</Link></li>
                             <li><Link to="/information">Información</Link></li>
-                            <li><Link to="/crud">CRUD</Link></li>
-                            <li><Link to="/crudMaqueta">CRUD MAQUETA</Link></li>
                         </ul>
                     </nav>
                 </header>

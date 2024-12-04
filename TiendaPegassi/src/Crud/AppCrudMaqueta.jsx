@@ -44,13 +44,13 @@ export function AppCrudMaqueta() {
 
     return (
         <>
-            <h1 className="crudTitle"> Crud de vehiculos </h1>
+            <h1 className="crudTitle"> Crud de vehículos </h1>
             <section className="crudHover">
                 <table className="tableCrud">
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Nombre del vehiculo</th>
+                            <th>Nombre del vehículo</th>
                             <th>Precio</th>
                             <th>Imagen</th>
                             <th>Editar / Eliminar</th>

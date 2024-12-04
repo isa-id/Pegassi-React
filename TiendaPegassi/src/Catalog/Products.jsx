@@ -3,19 +3,9 @@ import './css/catalog.css';
 import { CardProduct } from "./CardProduct";
 import { useNavigate } from 'react-router-dom';
 
-
-
-
-
-
-
 export function Products() {
-
-
     const [products, setProducts] = useState([]);
-
     useEffect(() => {
-
         fetch("http://localhost:1801/")
             .then((response) => {
                 if (!response.ok) {
@@ -25,8 +15,7 @@ export function Products() {
             })
             .then((data) => setProducts(data))
             .catch((error) => console.error("Error:", error));
-    }, []);
-
+    }, [products]);
 
     const navigate = useNavigate();
 
@@ -38,7 +27,7 @@ export function Products() {
 
     return (
         <>
-            <h1 className="catalogTitle"> Catalogo de vehiculos deportivos</h1>
+            <h1 className="catalogTitle"> Catálogo de vehículos deportivos</h1>
             <section className="productsHover">
                 {products.map(({ _id, carname, carprice, carimage }) => (
                     <CardProduct
@@ -54,4 +43,3 @@ export function Products() {
         </>
     );
 }
-
